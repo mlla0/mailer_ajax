@@ -2,8 +2,12 @@
 
 ## made in pair programming by Maud Lévy & Antoine Vercoutère
 
-### link to production version [http://mailer-ajax-mlav.herokuapp.com](http://mailer-ajax-mlav.herokuapp.com)
-
-
+### link to production version: [http://mailer-ajax-mlav.herokuapp.com](http://mailer-ajax-mlav.herokuapp.com)
 
 ### how to use
+
+1. 
+2.
+3.
+
+:kiss:
