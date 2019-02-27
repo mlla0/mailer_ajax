@@ -1,24 +1,9 @@
-# README
+# mailer ajax (thp week 8, day 4)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## made in pair programming by Maud Lévy & Antoine Vercoutère
 
-Things you may want to cover:
+### link to production version
 
-* Ruby version
+(http://mailer-ajax-mlav.herokuapp.com/)[http://mailer-ajax-mlav.herokuapp.com/]
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### how to use
