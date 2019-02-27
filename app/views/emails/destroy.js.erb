@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-var element = document.getElementById("<%= @email.id %>");
-    element.parentNode.removeChild(element);
+var elementDiv = $('#<%= @email.id %>');
+    elementDiv.fadeOut("slow");
 
 var elementLi = $("[data-id=<%= @email.id %>]");
-	elementLi.remove();
+	elementLi.fadeOut("slow");
 
 })
