@@ -2,11 +2,13 @@
 	<div class="col-6">
 		<div class="list-group">
 			<% @emails.each do |email| %>
-		  		<a href="#" class="list-group-item list-group-item-action" data-id="<%= email.id %>"><%= email.object %></a>
+
+		  		<%= link_to "#{email.object}", email_path(email.id), :class => "list-group-item list-group-item-action", :data => { :id => "#{email.id}", :read => "#{email.read}", remote: true }, :method => "put" %>
+
 		  	<% end %>
 		</div>
 	</div>
-	<div class="col-6">
+	<div class="col-6" id="getFixed">
 		<% @emails.each do |email| %>
 		<div class="card" id="<%= email.id %>">
 		  <div class="card-body">

@@ -18,6 +18,14 @@
 
 $(document).ready(function(){
 
+	$('.list-group a').each(function() {
+		if ($(this).attr('data-read') === "false") {
+			$(this).css('fontWeight', 'bold');
+		}
+		else {
+			$(this).css('fontWeight', 'normal');
+		}
+	});
 	
 	$('.list-group a').click(function(e){
 		var email_id = $(this).attr('data-id');
@@ -32,4 +40,23 @@ $(document).ready(function(){
 		e.preventDefault();
 	})
 
+
+  	function fixDiv() {
+    	var $cache = $('#getFixed');
+    	if ($(window).scrollTop() > 100)
+     	$cache.css({
+        	'position': 'fixed',
+        	'z-index': '1000',
+        	'left': '50%',
+        	'width': '40%',
+        	'top': '100px'
+      	});
+    	else
+      	$cache.css({
+      	});
+  	}
+  	$(window).scroll(fixDiv);
+  	fixDiv();
+
 })
+
