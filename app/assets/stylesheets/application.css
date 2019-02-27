@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.card {
+	display: none;
+}
+
+.read {
+	display: inherit;
+}

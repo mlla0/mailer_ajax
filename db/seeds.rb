@@ -8,6 +8,6 @@
 
 Email.destroy_all
 
-10.times do
-	Email.create(object: Faker::Hipster.sentence, body: Faker::Hipster.paragraph(5))
+20.times do
+	Email.create(object: Faker::Hipster.sentence, body: Faker::Hipster.paragraph(10))
 end

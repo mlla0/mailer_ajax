@@ -15,3 +15,21 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+	
+	$('.list-group a').click(function(e){
+		var email_id = $(this).attr('data-id');
+
+		$('.list-group a').removeClass('active');
+		$('.card').removeClass('read');
+
+		$(this).addClass('active');
+		$("#"+email_id).addClass('read');
+		$("#"+email_id).hide().fadeIn("slow");
+
+		e.preventDefault();
+	})
+
+})

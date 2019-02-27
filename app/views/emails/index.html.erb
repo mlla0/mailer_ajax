@@ -2,7 +2,7 @@
 	<div class="col-6">
 		<div class="list-group">
 			<% @emails.each do |email| %>
-		  		<a href="#" class="list-group-item list-group-item-action" id="<%= email.id %>"><%= email.object %></a>
+		  		<a href="#" class="list-group-item list-group-item-action" data-id="<%= email.id %>"><%= email.object %></a>
 		  	<% end %>
 		</div>
 	</div>
@@ -10,7 +10,9 @@
 		<% @emails.each do |email| %>
 		<div class="card" id="<%= email.id %>">
 		  <div class="card-body">
-		    <%= email.body %>
+		  	<h2 class="card-title"><%= email.object %></h2>
+		    <p><%= email.body %></p>
+		    <p class="text-right"><%= link_to "Delete", email_path(email.id), :class => "btn btn-outline-danger btn-sm", :data => { :confirm => "Are you sure?", remote: true }, :method => "delete" %></p>
 		  </div>
 		</div>
 		<% end %>
