@@ -1,0 +1,18 @@
+<div class="row">
+	<div class="col-6">
+		<div class="list-group">
+			<% @emails.each do |email| %>
+		  		<a href="#" class="list-group-item list-group-item-action" id="<%= email.id %>"><%= email.object %></a>
+		  	<% end %>
+		</div>
+	</div>
+	<div class="col-6">
+		<% @emails.each do |email| %>
+		<div class="card" id="<%= email.id %>">
+		  <div class="card-body">
+		    <%= email.body %>
+		  </div>
+		</div>
+		<% end %>
+	</div>
+</div>
