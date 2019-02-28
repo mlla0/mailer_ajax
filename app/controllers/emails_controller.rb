@@ -6,7 +6,7 @@ class EmailsController < ApplicationController
 
   def update
     @email = Email.find(params[:id])
-    @email.update(read: true)
+    @email.update(read: params[:param_bool])
 
     respond_to do |format|
       format.js
